@@ -54,18 +54,18 @@ class Sigmoid:
 def main():
     fc = FullyConnect(2, 1)
     sigmoid = Sigmoid()
-    x = np.array([[1], [2]])
-    print 'parameters: weights:', fc.weights, ' bias:', fc.bias, ' input: ', x
+    a = np.array([[1], [2]])
+    print 'parameters: weights:', fc.weights, ' bias:', fc.bias, ' input: ', a
 
     # The Forward Algorithm
-    y1 = fc.forward(x)
+    y1 = fc.forward(a)
     y2 = sigmoid.forward(y1)
     print 'forward result: ', y2
 
     # Counter-propagation
     d1 = sigmoid.backward()
-    dx = fc.backward(d1)
-    print 'backward result: ', dx
+    da = fc.backward(d1)
+    print 'backward result: ', da
 
 
 if __name__ == '__main__':
