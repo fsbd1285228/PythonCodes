@@ -1,10 +1,15 @@
 # Conway's Game of Life
 
 Core Operations:
+
 R : Reset the world
+
 Enter : Process the evolution 
+
 Space : Suspend the evolution
+
 Mouse Left : Add a cell
+
 Mouse Right : Delete a cell
 
 
